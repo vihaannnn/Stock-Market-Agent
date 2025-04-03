@@ -206,12 +206,14 @@ if __name__ == "__main__":
     
     results = search_and_extract(user_query, recent_news=want_recent)
     
-    print(f"\nFound {len(results)} results:")
-    for i, result in enumerate(results):
-        print(f"\n--- Result {i+1} ---")
-        print(f"URL: {result['url']}")
-        print(f"Publication date: {result['publication_date']}")
-        print(f"Content preview: {result['content'][:200]}...")
+    # print(f"\nFound {len(results)} results:")
+    # for i, result in enumerate(results):
+    #     print(f"\n--- Result {i+1} ---")
+    #     print(f"URL: {result['url']}")
+    #     print(f"Publication date: {result['publication_date']}")
+    #     print(f"Content preview: {result['content'][:200]}...")
+
+    print(results)
         
     # Save results to a file
     with open('search_results.json', 'w', encoding='utf-8') as f:
