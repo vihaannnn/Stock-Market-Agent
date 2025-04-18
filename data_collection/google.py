@@ -47,7 +47,7 @@ def enhance_query_with_llm(user_query):
         return user_query  # Fallback to original query if enhancement fails
 
 
-def google_search(query, num_results=2):
+def google_search(query, num_results=10):
     """
     Perform a Google search using the googlesearch-python library
     """
